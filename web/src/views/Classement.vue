@@ -3,7 +3,8 @@
    <ul id="list-cat">
       <li v-for="cat in cats" :key="cat.id">
         <div class="img-container">
-        <img v-bind:src="cat.url"><span>{{cat.vote}}</span>
+        <img v-bind:src="cat.url">
+        <span>{{cat.vote}}</span>
         </div>
       </li>
     </ul>
