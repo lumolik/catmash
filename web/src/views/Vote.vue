@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { store } from "@/store";
-import { CatModel } from "@/services/catService";
+import { Component, Vue } from 'vue-property-decorator';
+import { store } from '@/store';
+import { CatModel } from '@/services/catService';
 
 @Component({
   data: () => {
@@ -22,8 +22,8 @@ import { CatModel } from "@/services/catService";
       const { firstcat, secondCat } = store.getNextPairOfCat();
       this.$data.firstcat = firstcat;
       this.$data.secondCat = secondCat;
-    }
-  }
+    },
+  },
 })
 export default class Classement extends Vue {}
 </script>
