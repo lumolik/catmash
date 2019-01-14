@@ -1,4 +1,4 @@
-interface CatModel {
+export interface CatModel {
     url: string,
     id: string,
     vote: number
